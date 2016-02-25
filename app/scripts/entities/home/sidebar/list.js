@@ -13,40 +13,46 @@ define(['app'], function(Portfolio){
         var initializeList = function(){
             var list = new Entities.List([
                 {
-                    id: 13,
+                    id: 14,
                     title: 'Timeline Longform',
                     client: 'Timeline',
                     startdate: 'August. 2015'
                 },
                 {
-                    id: 12,
+                    id: 13,
                     title: 'Timeline Embed Builder',
                     client: 'Timeline',
                     startdate: 'August. 2015'
                 },
                 {
-                    id: 11,
+                    id: 12,
                     title: 'Timeline Homepage',
                     client: 'Timeline',
                     startdate: 'August. 2015'
                 },
                 {
+                    id: 11,
+                    title: 'Mobidia',
+                    client: 'Mobidia',
+                    startdate: 'January. 2015'
+                },
+                {
                     id: 10,
                     title: 'QuickMobile',
                     client: 'QuickMobile Inc',
-                    startdate: 'August. 2014'
+                    startdate: 'August. 2013'
                 },
                 {
                     id: 1,
                     title: 'Tag Idea Revolution',
                     client: 'Tag Idea Revolution',
-                    startdate: 'Dec. 2013'
+                    startdate: 'March 2013'
                 },
                 {
                     id: 2,
                     title: 'Nissan/Infiniti',
                     client: 'The Marketing Store',
-                    startdate: 'Dec. 2012'
+                    startdate: 'Oct. 2012'
                 },
                 {
                     id: 3,
