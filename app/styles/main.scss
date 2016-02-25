@@ -1,0 +1,409 @@
+@import '../bower_components/sass-bootstrap/lib/bootstrap';
+
+$display-font: "league-gothic", sans-serif;
+$type-font: "adobe-garamond-pro", Garamond, serif;
+
+$off-white: #dcdede;
+$maroon: #832318;
+$dark-maroon: #2d0c08;
+$darkest-maroon: #230705;
+$orange-red: #c83e2c;
+$warm-orange: #f47040;
+$grey: #cccccc;
+$almost-black: #333333;
+$almost-white: #fafafa;
+h1, h3 {
+    font-family: $display-font;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: $almost-white;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 90px;
+    line-height: 80px;
+    margin: 0 0 4px 0;
+}
+h3 {
+    font-size: 45px;
+}
+body {
+    background-color: #ffffff;
+    color: $off-white;
+    background: url('../images/main-bg.jpg') repeat;
+    font-family: $type-font;
+}
+
+.outline-container {
+    margin: 12px;
+    padding: 6px;
+    background-color: $darkest-maroon;
+}
+
+.container-fluid {
+    margin: 6px;
+    background-color: $darkest-maroon;
+    padding: 10px;
+    border: 1px solid $off-white;
+}
+
+#CubeContainer {
+    width: 82px;
+    height: 82px;
+    position: relative;
+    margin: 10px auto 10px;
+    border: 1px solid $grey;
+}
+
+#CubeSmallContainer {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    margin: 2px auto 2px;
+    border: 1px solid $grey;
+}
+
+#Cube, #CubeSmall {
+    -webkit-animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 30s;
+    -webkit-transform-style: preserve-3d;
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    transform-style: preserve-3d;
+    // left: -1px;
+}
+#Cube {
+    -webkit-transform-origin: 40px 40px 0;
+    transform-origin: 40px 40px 0;
+}
+#CubeSmall {
+    -webkit-transform-origin: 14px 14px 0;
+    transform-origin: 14px 14px 0;
+
+}
+#Cube div {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #000;
+    font-size: 60px;
+    line-height: 60px;
+    &.face1 { 
+        -webkit-transform: translateZ(40px);
+        transform: translateZ(40px);
+         background-image: url('../images/cube/1.png');
+    }
+    &.face2 { 
+        -webkit-transform: rotateY(90deg) translateZ(40px);
+        transform: rotateY(90deg) translateZ(40px);
+        background-image: url('../images/cube/3.png');
+    }
+    &.face3 { 
+        -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
+        background-image: url('../images/cube/5.png');
+    }
+    &.face4 { 
+        -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
+        background-image: url('../images/cube/4.png');
+    }
+    &.face5 { 
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
+        background-image: url('../images/cube/2.png');
+    }
+    &.face6 { 
+        transform: rotateX(-90deg) translateZ(40px);
+        -webkit-transform: rotateX(-90deg) translateZ(40px);
+        background-image: url('../images/cube/6.png');
+    }
+}
+#CubeSmall div {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #000;
+    font-size: 60px;
+    line-height: 60px;
+    &.face1 { 
+        -webkit-transform: translateZ(14px);
+        transform: translateZ(14px);
+         background-image: url('../images/cube/1.png');
+    }
+    &.face2 { 
+        -webkit-transform: rotateY(90deg) translateZ(14px);
+        transform: rotateY(90deg) translateZ(14px);
+        background-image: url('../images/cube/3.png');
+    }
+    &.face3 { 
+        -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(14px);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(14px);
+        background-image: url('../images/cube/5.png');
+    }
+    &.face4 { 
+        -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(14px);
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(14px);
+        background-image: url('../images/cube/4.png');
+    }
+    &.face5 { 
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(14px);
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(14px);
+        background-image: url('../images/cube/2.png');
+    }
+    &.face6 { 
+        transform: rotateX(-90deg) translateZ(14px);
+        -webkit-transform: rotateX(-90deg) translateZ(14px);
+        background-image: url('../images/cube/6.png');
+    }
+}
+@-webkit-keyframes spincube {
+    from,to  {                                                    }
+    16%      { -webkit-transform: rotateY(-66deg);                }
+    33%      { -webkit-transform: rotateY(-70deg) rotateZ(110deg); }
+    50%      { -webkit-transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { -webkit-transform: rotateY(45deg) rotateX(45deg);  }
+    83%      { -webkit-transform: rotateX(70deg);                 }
+}
+@keyframes spincube {
+    from,to  {                                                    }
+    16%      { transform: rotateY(-66deg) rotateZ(20deg);;                }
+    33%      { transform: rotateY(-70deg) rotateZ(110deg); }
+    50%      { transform: rotateY(180deg) rotateZ(90deg); }
+    66%      { transform: rotateY(45deg) rotateX(45deg);  }
+    83%      { transform: rotateX(70deg);                 }
+}
+#Header {
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    p {
+        margin: 0;
+    }
+    small {
+        color: $warm-orange;
+        line-height: 16px;
+        font-size: 18px;
+        font-weight: 200;
+        font-style: italic;
+    }
+}
+
+#MainLine {
+    height: 3px;
+    width: 99%;
+    border: 0;
+    margin: 0px 10px 5px 10px;
+}
+
+#SideBar {
+    ul {
+        padding: 0;
+        margin: 0 0 20px 0;
+        background-color: $orange-red;
+        overflow: hidden;
+        border-top: 1px solid white;
+    }
+    li {
+        height: 61px;
+        display: block;
+        position: relative;
+        list-style: none;
+        background-color: $darkest-maroon;
+        padding-left: 5px;
+        border-bottom: 1px solid white;
+        vertical-align: middle;
+        cursor: pointer;
+        z-index: 100;
+        padding-top: 5px;
+        &.bordered {
+            border-left: 4px solid $orange-red;
+        }
+        p {
+            pointer-events: none;
+        }
+        img {
+            position: absolute;
+            // float: right;
+            right: -60px;
+            top: 0;
+            z-index: 99;
+            pointer-events: none;
+            &.show {
+                right: 0;
+                animation: animate-in .25s;
+                -webkit-animation: animate-in .25s; /* Safari and Chrome */
+            }
+            &.noshow {
+                animation: animate-out .25s;
+                -webkit-animation: animate-out .25s; /* Safari and Chrome */                
+            }
+        }
+        &.active {
+            border-left: 4px solid $orange-red;
+            img {
+                right: 0;
+                &.bw {
+                    display: none;
+                    opacity: 0;
+                    animation: fadeOut .25s;
+                    -webkit-animation: fadeOut .25s; /* Safari and Chrome */
+                }
+            }
+        }
+    }
+}
+@keyframes animate-in {
+    from {right: -60px;}
+    to {right: 0px;}
+}
+@-webkit-keyframes animate-in /* Safari and Chrome */ {
+    from {right: -60px;}
+    to {right: 0px;}
+}
+@keyframes animate-out {
+    from {right: 0px;}
+    to {right: -60px;}
+}
+@-webkit-keyframes animate-out /* Safari and Chrome */ {
+    from {right: 0px;}
+    to {right: -60px;}
+}
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@-webkit-keyframes fadeOut /* Safari and Chrome */ {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#BillBoard {
+    .welcome {
+        overflow: hidden;
+        h1 {
+            text-align: left;
+            font-size: 480px;
+            line-height: 380px;
+            margin-bottom: 70px;
+            text-decoration: underline; 
+        }
+        p {
+            font-family: $display-font;
+            font-size: 100px;
+            line-height: 90px;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: $warm-orange;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid white;
+        li {
+            display: block;
+            position: relative;
+            list-style: none;
+            p {
+                font-size: 14px;
+                margin: 10px 0;
+            }
+            img {
+                width: 100%;
+                margin-bottom: 10px;
+                border: 1px solid white;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+#Footer {
+    img {
+        float: left;
+        margin: 5px;
+        height: 100px;
+        width: 100px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        padding: 2px;
+    }
+    ul {
+        list-style: none;
+        display: block;
+        height: auto;
+        background-color: $darkest-maroon;
+        padding: 0;
+        border-top: 1px solid white;
+        &.contact {
+            li {
+                border-bottom: 1px solid #ffffff;
+            }
+        }
+        li {
+            display: block;
+            min-height: 32px;
+            border-top-width: 0;
+            background-color: $darkest-maroon;
+            padding: 5px 0 0 0;
+            position: relative;
+            margin-right: 10px;
+            
+            a {
+                font-family: $type-font;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 0 0 0 5px;
+                clear: left;
+                float: left;
+                color: $off-white;
+                &:hover {
+                    color: $warm-orange
+                }
+            }
+        }        
+    }
+}
+#FinePrint {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    p {
+        padding: 0;
+        padding-top: 6px;
+        font-size: 9px;
+        margin: 0;
+    }
+}
+@media only screen and (max-device-width: 480px) {
+    h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+    #BillBoard {
+        .welcome {
+            h1 {
+                font-size: 200px;
+                line-height: 140px;
+                margin-bottom: 45px;
+            }
+            p {
+                font-size: 80px;
+                line-height: 70px;
+            }
+        }
+    }
+}
