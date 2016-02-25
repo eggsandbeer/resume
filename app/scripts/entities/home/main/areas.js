@@ -216,7 +216,7 @@ define(['app'], function(Portfolio){
                     title: "Timeline",
                     url: "https://m-staging.timeline.com/",
                     urltitle: "http://www.timeline.com/ (deprecated)",
-                    content: "Although now replaced with a Medium site, I did a significant amount of work on features for the old timeline.com. Timeline.com was an express/jade app with jQuery plugin based javascript and SASS powered stylesheets. I fixed numerous bugs, built things like email subscription pop up boxes and maintained the numerous gulp tasks that went along with the project. As well, I did a lot of bug fixes and feature addition and maintenance to the CMS and curation tools that powered the articles for timeline.com Sad to see it all go, but on to bigger and better things.",
+                    content: "Although now replaced with a Medium site, I did a significant amount of work on features for the old timeline.com. Timeline.com was an express/jade app with jQuery plugin based javascript and SASS powered stylesheets, along with a long list of gulp tasks. I fixed numerous bugs, built things like email subscription pop up modals and maintained the numerous gulp tasks that went along with the project. As well, I did a lot of bug fixes and feature addition and maintenance to the CMS and curation tools that powered the articles for timeline.com Sad to see it all go because this was a pretty big codebase that a lot of people worked very hard on, but on to bigger and better things, I guess.",
                     images: [
                         {
                             src: 'images/work/11.1.png',
@@ -237,7 +237,7 @@ define(['app'], function(Portfolio){
                     title: "Timeline - Embed Builder",
                     url: "http://timeline-embed-staging.herokuapp.com",
                     urltitle: "http://timeline-embed-staging.herokuapp.com/#/embeds?_k=u3r4h0",
-                    content: "This was a demo project to allow users to picks a series of website sites and then create an iframe module to display that list. The app would have to scrape the site provided by the user, save the neccessary content and then serve it up for display in the UI and then in the iframe too. I was mostly responsible for the frontend of the App (although I worked on the API too). Using React and ES6 modules along with webpack, it was easy to create components that we could use twofold -- in the frame app and in the embed constructor app. This site was a total success on the technology side, but has not really been picked up from the sales side.",
+                    content: "This was a demo project to allow users to pick a series of webpages and then create an iframe module to display that list in a nice UI. The app would have to scrape the site provided by the user, save the neccessary content and then serve it up for display in the iframe embed constructor UI and then in the iframe UI too. I was mostly responsible for the frontend of the App (although I worked on the API too), which is a single page webapp. Using React and ES6 modules along with webpack and a series of React libs, it was very easy to create components that we could use twofold -- in the frame app and in the embed constructor app. This site was a total success on the technology side, but has not really been picked up from the sales side. Dems da breaks.",
                     images: [
                         {
                             src: 'images/work/12.1.png',
@@ -258,7 +258,7 @@ define(['app'], function(Portfolio){
                     title: "Timeline - Longform",
                     url: "http://staging-longform.timeline.com/sanfrancisco_satanist",
                     urltitle: "http://staging-longform.timeline.com/sanfrancisco_satanist",
-                    content: "After timeline switch to using Medium as their primary website, the content that Timeline publishes was sort of standardized in terms of code and layout options. However, we still wanted to have a a place to publish longform articles with unique layouts and more experimental code options (graphing and mapping with d3, etc.). So, we need a whole new infrastructure to support this.",
+                    content: "After timeline switched to using Medium as their primary website and CMS, the content that Timeline publishes was sort of standardized in terms of code and layout options. However, we still wanted to have a a place to publish longform articles with unique layouts and more experimental code options (graphing and mapping with d3, etc.). So, we needed a whole new infrastructure to support this. Hence, longform.timeline.com, which is a little nodejs express app. From getting the hosting with heroku, setting up AWS name servers for the subdomain, setting up heroku pipelines for staging and production and hooking in github and then writing all the styles and javascript, I was responsible for it all. As well, I helped come up with features for the article (maps of locations from the article, satanic pentagrams featuring lead characters from the story, etc.) and even contributed to large parts of the design. Something to be proud of.",
                     images: [
                         {
                             src: 'images/work/13.1.png',
