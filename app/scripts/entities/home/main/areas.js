@@ -278,7 +278,7 @@ define(['app'], function(Portfolio){
                     id: 13,
                     title: "Timeline - Embed Builder",
                     url: "http://timeline-embed-staging.herokuapp.com",
-                    urltitle: "http://timeline-embed-staging.herokuapp.com/#/embeds?_k=u3r4h0",
+                    urltitle: "http://timeline-embed-staging.herokuapp.com",
                     content: "This was a demo project to allow users to pick a series of webpages and then create an iframe module to display that list in a nice UI. The app would have to scrape the site provided by the user, save the neccessary content and then serve it up for display in the iframe embed constructor UI and then in the iframe UI too. I was mostly responsible for the frontend of the App (although I worked on the API too), which is a single page webapp. Using React and ES6 modules along with webpack and a series of React libs, it was very easy to create components that we could use twofold -- in the frame app and in the embed constructor app. This site was a total success on the technology side, but has not really been picked up from the sales side. Dems da breaks.",
                     images: [
                         {
@@ -298,8 +298,8 @@ define(['app'], function(Portfolio){
                 {
                     id: 14,
                     title: "Timeline - Longform",
-                    url: "http://staging-longform.timeline.com/sanfrancisco_satanist",
-                    urltitle: "http://staging-longform.timeline.com/sanfrancisco_satanist",
+                    url: "http://longform.timeline.com/sanfrancisco_satanist",
+                    urltitle: "http://longform.timeline.com/sanfrancisco_satanist",
                     content: "After timeline switched to using Medium as their primary website and CMS, the content that Timeline publishes was sort of standardized in terms of code and layout options. However, we still wanted to have a a place to publish longform articles with unique layouts and more experimental code options (graphing and mapping with d3, etc.). So, we needed a whole new infrastructure to support this. Hence, longform.timeline.com, which is a little nodejs express app. From getting the hosting with heroku, setting up AWS name servers for the subdomain, setting up heroku pipelines for staging and production and hooking in github and then writing all the styles and javascript, I was responsible for it all. As well, I helped come up with features for the article (maps of locations from the article, satanic pentagrams featuring lead characters from the story, etc.) and even contributed to large parts of the design. Something to be proud of.",
                     images: [
                         {
